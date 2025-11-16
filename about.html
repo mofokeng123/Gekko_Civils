@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Gekko Civils and Maintenance</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <style>
+    /* Page-specific override for About header background */
+    .header.about-header {
+      background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/about.jpg);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header/Navigation (Shared across pages) -->
+  <section class="header about-header">
+    <nav>
+      <a href="index.html">
+        <img src="images/new Logo.png" alt="Gekko Civils Logo">
+      </a>
+
+      <!-- Nav Links -->
+      <div class="nav-links" id="navLinks">
+        <i class="ri-close-line" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Menu Icon -->
+      <i class="ri-menu-line" onclick="showMenu()"></i>
+    </nav>
+
+    <!-- About Hero Text -->
+    <div class="text-box">
+      <h1>About <span>Gekko Civils</span></h1>
+      <p>Discover our story, mission, and dedicated team behind South Africa's trusted civil construction and maintenance experts. Founded in 2010 in Vanderbijlpark, we deliver innovative, sustainable solutions with over 15 years of experience guided by integrity and precision, one project at a time.</p>
+      <a href="#about-content" class="hero-btn">Learn Our Story</a>
+    </div>
+  </section>
+
+  <!-- About Content Section -->
+  <section id="about-content" class="about-section">
+    <div class="container">
+      <!-- Who We Are -->
+      <div class="who-we-are">
+        <h2>Who We Are</h2>
+        <p>
+          Founded in 2010, Gekko Civils and Maintenance has evolved from a small team of passionate professionals into a leading provider of civil engineering, construction, repairs, and building maintenance services across South Africa. We specialize in residential, commercial, and industrial projects, ensuring every endeavor—from renovations and plumbing to electrical installations and carpentry—is executed with precision, safety, and sustainability in mind.
+        </p>
+      </div>
+
+      <!-- Mission & Vision Grid -->
+      <div class="mission-vision">
+        <div class="card">
+          <i class="ri-focus-3-fill"></i>
+          <h3>Our Mission</h3>
+          <p>
+            To deliver innovative, cost-effective, and high-quality solutions that exceed client expectations while contributing to sustainable infrastructure development in South Africa.
+          </p>
+        </div>
+        <div class="card">
+          <i class="ri-eye-line"></i>
+          <h3>Our Vision</h3>
+          <p>
+            To be the premier partner in construction and maintenance, renowned for integrity, expertise, and a commitment to excellence that builds lasting communities.
+          </p>
+        </div>
+      </div>
+
+      <!-- Team Highlights -->
+      <div class="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-grid">
+          <div class="team-card">
+            <img src="images/team-1.jpeg" alt="John Doe"> <!-- Replace with actual image -->
+            <h3>John Doe</h3>
+            <p class="role">Project Manager</p>
+            <p>15+ years leading major infrastructure projects with a focus on timely delivery and client satisfaction.</p>
+          </div>
+          <div class="team-card">
+            <img src="images/team-2.jpg" alt="Jane Smith"> <!-- Replace with actual image -->
+            <h3>Jane Smith</h3>
+            <p class="role">Lead Electrician</p>
+            <p>Expert in electrical systems and safety compliance for commercial and residential builds.</p>
+          </div>
+          <div class="team-card">
+            <img src="images/team-3.jpg" alt="Mike Johnson"> <!-- Replace with actual image -->
+            <h3>Mike Johnson</h3>
+            <p class="role">Maintenance Supervisor</p>
+            <p>Oversees renovations and repairs, ensuring durable and efficient solutions for all clients.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta">
+        <a href="contact.html" class="hero-btn">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+   <footer class="footer">
+    <div class="footer-content">
+      <a href="index.html" class="footer-logo" aria-label="Gekko Civils Home">
+        <img src="images/new Logo.png" alt="Gekko Civils Logo">
+      </a>
+      <nav class="footer-nav" role="navigation" aria-label="Footer navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <address>
+        123 Main Street, Johannesburg, Gauteng, 2000<br>
+        Phone: +27 11 123 4567<br>
+        Email: <a href="mailto:info@gekkocivils.co.za">info@gekkocivils.co.za</a>
+      </address>
+      
+      <p>&copy; 2025 Gekko Civils & Maintenance — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+     const navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-220px";
+    }
+  </script>
+</body>
+</html>

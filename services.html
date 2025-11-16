@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Gekko Civils and Maintenance</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <style>
+    /* Page-specific override for Services header background */
+    .header.services-header {
+      background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/services.jpg);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header/Navigation (Shared across pages) -->
+  <section class="header services-header">
+    <nav>
+      <a href="index.html">
+        <img src="images/new Logo.png" alt="Gekko Civils Logo">
+      </a>
+
+      <!-- Nav Links -->
+      <div class="nav-links" id="navLinks">
+        <i class="ri-close-line" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Menu Icon -->
+      <i class="ri-menu-line" onclick="showMenu()"></i>
+    </nav>
+
+    <!-- Services Hero Text -->
+    <div class="text-box">
+      <h1>Our <span>Services</span></h1>
+<p>Explore our comprehensive range of civil construction, repairs, and maintenance solutions tailored to residential, commercial, and industrial needs. From groundbreaking infrastructure projects like roads and bridges to meticulous renovations, electrical installations, plumbing systems, and custom carpentry, we deliver end-to-end expertise backed by certified professionals and state of the art tools. Committed to quality, innovation, and sustainability, we prioritize on time delivery, budget adherence, and eco friendly practices to transform your vision into durable, future-proof realities ensuring safety, efficiency, and lasting value for every client across South Africa.</p>
+  <a href="#services-content" class="hero-btn">View Services</a>      
+    </div>
+  </section>
+
+  <!-- Services Content Section -->
+  <section id="services-content" class="services-section">
+    <div class="container">
+      <!-- Introduction -->
+      <div class="intro">
+        <h2>Comprehensive Solutions</h2>
+        <p>
+          At Gekko Civils, we offer end-to-end services in civil engineering and building maintenance. From initial design to final handover, our expert team ensures projects are delivered efficiently, safely, and sustainably.
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="images/Civil Construction.jpeg" alt="Civil Construction" class="service-image"> <!-- Replace with actual image path -->
+          <i class="ri-building-line"></i>
+          <h3>Civil Construction</h3>
+          <p>Full-scale construction for infrastructure projects including roads, bridges, and foundations. We handle site preparation, structural building, and compliance with local regulations.</p>
+          <a href="CivilConstructionGallery.html" class="view-more-btn">View More Pictures</a>
+        </div>
+        <div class="service-card">
+          <img src="images/welding.jpeg" alt="Renovations & Repairs" class="service-image"> <!-- Replace with actual image path -->
+          <i class="ri-tools-line"></i>
+          <h3>Welding</h3>
+          <p>Expert welding services for residential and commercial properties, including structural steel fabrication, pipeline repairs, metal reinforcements, and precision custom joins</p>
+          <a href="weldingGallery.html" class="view-more-btn">View More Pictures</a>
+        </div>
+        <div class="service-card">
+          <img src="images/security.jpeg" alt="Electrical Installations" class="service-image"> <!-- Replace with actual image path -->
+          <i class="ri-plug-line"></i>
+          <h3>Security Installations</h3>
+          <p>Expert security solutions for residential and commercial properties: CCTV systems, electric fencing, access gates, and intrusion alarms to boost protection and peace of mind.</p>
+          <a href="EletricityGallery.html" class="view-more-btn">View More Pictures</a>
+        </div>
+        <div class="service-card">
+          <img src="images/painting.jpeg" alt="Plumbing Services" class="service-image"> <!-- Replace with actual image path -->
+          <i class="ri-brush-2-fill"></i>
+          <h3>Painting Service</h3>
+          <p>Expert painting solutions for interior and exterior surfaces, including surface preparation, premium coatings, and specialized finishes.</p>
+          <a href="paintingGallery.html" class="view-more-btn">View More Pictures</a>
+        </div>
+        <div class="service-card">
+          <img src="images/capentry.jpeg" alt="Carpentry & Joinery" class="service-image"> 
+          <i class="ri-hammer-line"></i>
+          <h3>Carpentry & Joinery</h3>
+          <p>Custom carpentry for doors, cabinets, and structural timber work. Precision craftsmanship tailored to your design needs with durable, eco-friendly woods.</p>
+          <a href="capentryGallery.html" class="view-more-btn">View More Pictures</a>
+        </div>
+        <div class="service-card">
+          <img src="images/aluminium.jpeg" alt="Building Maintenance" class="service-image"> 
+          <i class="ri-shield-check-line"></i>
+          <h3>Aluminum Works</h3>
+          <p>Expert aluminum fabrication for residential and commercial properties: windows, doors, cladding, and frameworks to boost durability, aesthetics, and weather resistance.</p>
+          <a href="AluminumGallery.html" class="view-more-btn">View More Pictures</a>
+        </div>
+        <div class="service-card">
+          <img src="images/maintainance.jpeg" alt="Maintenance" class="service-image"> 
+          <i class="ri-shield-check-line"></i>
+          <h3>Maintenance</h3>
+          <p>Unlock hassle free property care with our pro routine services for homes and businesses: swift inspections, sparkling cleans, and smart minor fixes. </p>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta">
+        <a href="contact.html" class="hero-btn">Request a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+    <footer class="footer">
+    <div class="footer-content">
+      <a href="index.html" class="footer-logo" aria-label="Gekko Civils Home">
+        <img src="images/new Logo.png" alt="Gekko Civils Logo">
+      </a>
+      <nav class="footer-nav" role="navigation" aria-label="Footer navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <address>
+        123 Main Street, Johannesburg, Gauteng, 2000<br>
+        Phone: +27 11 123 4567<br>
+        Email: <a href="mailto:info@gekkocivils.co.za">info@gekkocivils.co.za</a>
+      </address>
+      
+      <p>&copy; 2025 Gekko Civils & Maintenance — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-220px";
+    }
+  </script>
+</body>
+</html>

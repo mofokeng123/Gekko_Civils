@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Gekko Civils and Maintenance</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <style>
+    /* Page-specific override for Contact header background */
+    .header.contact-header {
+      background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/contactUs.jpg);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header/Navigation (Shared across pages) -->
+  <section class="header contact-header">
+    <nav>
+      <a href="index.html">
+        <img src="images/new Logo.png" alt="Gekko Civils Logo">
+      </a>
+
+      <!-- Nav Links -->
+      <div class="nav-links" id="navLinks">
+        <i class="ri-close-line" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Menu Icon -->
+      <i class="ri-menu-line" onclick="showMenu()"></i>
+    </nav>
+
+    <!-- Contact Hero Text -->
+    <div class="text-box">
+      <h1>Get In <span>Touch</span></h1>
+      <p>Ready to start your next project? Reach out to us for a free consultation. Our team is here to discuss your needs and provide expert advice tailored to your vision. Whether it's a small repair, full scale construction, or ongoing maintenance, we respond within 24 hours with personalized quotes, transparent timelines, and proven strategies to minimize disruptions and maximize value. Let's partner to bring your ideas to life efficiently, safely, and sustainably across South Africa.</p>
+      <a href="#contact-form" class="hero-btn">Send a Message</a>
+    </div>
+  </section>
+
+  <!-- Contact Content Section -->
+  <section id="contact-form" class="contact-section">
+    <div class="container">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <div class="info-grid">
+          <div class="info-item">
+            <i class="ri-map-pin-line"></i>
+            <h3>Address</h3>
+            <p>123 Construction Street<br>Vanderbijlpark, Gauteng<br>South Africa, 1911</p>
+          </div>
+          <div class="info-item">
+            <i class="ri-phone-line"></i>
+            <h3>Phone</h3>
+            <p>+27 16 123 4567</p>
+          </div>
+          <div class="info-item">
+            <i class="ri-mail-line"></i>
+            <h3>Email</h3>
+            <p>info@gekkocivils.co.za</p>
+          </div>
+          <div class="info-item">
+            <i class="ri-time-line"></i>
+            <h3>Business Hours</h3>
+            <p>Mon - Fri: 8:00 AM - 5:00 PM<br>Sat: 9:00 AM - 1:00 PM<br>Sun: Closed</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form id="contactForm" onsubmit="submitForm(event)">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+          </div>
+          <div class="form-group">
+            <select id="service" name="service" required>
+              <option value="">Select a Service</option>
+              <option value="construction">Civil Construction</option>
+              <option value="renovations">Renovations & Repairs</option>
+              <option value="electrical">Electrical Installations</option>
+              <option value="plumbing">Plumbing Services</option>
+              <option value="carpentry">Carpentry & Joinery</option>
+              <option value="maintenance">Building Maintenance</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="hero-btn">Submit Message</button>
+        </form>
+        <p id="form-message" style="margin-top: 10px; text-align: center;"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Simple placeholder; expand as needed) -->
+    <footer class="footer">
+    <div class="footer-content">
+      <a href="index.html" class="footer-logo" aria-label="Gekko Civils Home">
+        <img src="images/new Logo.png" alt="Gekko Civils Logo">
+      </a>
+      <nav class="footer-nav" role="navigation" aria-label="Footer navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <address>
+        123 Main Street, Johannesburg, Gauteng, 2000<br>
+        Phone: +27 11 123 4567<br>
+        Email: <a href="mailto:info@gekkocivils.co.za">info@gekkocivils.co.za</a>
+      </address>
+      
+      <p>&copy; 2025 Gekko Civils & Maintenance — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-220px";
+    }
+  </script>
+</body>
+</html>

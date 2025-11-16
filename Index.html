@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gekko Civils and Maintenance</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html">
+        <img src="images/new Logo.png" alt="Gekko Civils Logo">
+      </a>
+
+      <!-- Nav Links -->
+      <div class="nav-links" id="navLinks">
+        <i class="ri-close-line" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Menu Icon -->
+      <i class="ri-menu-line" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+      <h1>Welcome to <span>Gekko Civils</span> and <span>Maintenance</span> Website</h1>
+      <p>We are a trusted leader in civil construction, repairs, and building maintenance services. 
+    Our dedicated team ensures that every project is completed on time, within budget, and to the highest quality standards. From residential and commercial renovations to plumbing, electrical, and carpentry work.
+     <br>Gekko Civils delivers reliable, professional, and affordable solutions across South Africa. With years of experience and a passion for excellence, we turn your vision into reality  one project at a time.
+  </p>
+      <a href="#" class="hero-btn">Contact Us For More Info</a>
+    </div>
+  </section>
+
+
+
+
+  <script>
+    const navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-220px";
+    }
+  </script>
+</body>
+</html>

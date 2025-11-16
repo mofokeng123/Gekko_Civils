@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gekko Official Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="header">
+    <div class="container">
+      <nav>
+        <div class="logo"><img src="/images/Logo.png" alt=""></div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+
+      <div class="header-content">
+        <h1>Gekko Civils</h1>
+        <p>and maintainance</p>
+        <button class="primary-btn">Explore</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --Primary-Color: #4CAF50;
+  --Secondary-Color: #FF5722;
+  --black: #000000;
+  --white: #FFFFFF;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: poppins, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+}
+
+#header{
+  width: 100vw;
+  min-height: 100vh;
+  background-image: linear-gradient(50deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/earth.jpg');
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+nav .logo img {
+  width: 100px;
+}
+
+.header-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.header-content h1{
+  font-size: 60px;
+  color: #167bbb;
+}
+
+.primary-btn{
+  padding: 10px 24px;
+  background-color: #167bbb;
+  color: #fff;
+  border: none;
+  
+  cursor: pointer;
+  
+}
